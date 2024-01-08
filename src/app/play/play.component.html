@@ -1,0 +1,11 @@
+<div id="game_board">
+    <div id="main_board">
+        <div class="game_board_comp">Score: &#160;<span id="score_value">0</span>&#160;points</div>
+        <div class="game_board_comp">Remaining time: &#160;<span id="time_value">0</span>&#160;seconds</div>
+    </div>
+    <div *ngIf="can_save_score">
+        <button id="save_button" (click)="save_score()">Save your score !</button>
+    </div>
+</div>
+<button id="play_again" *ngIf="game_ended" (click)="restart()">Play Again</button>
+<img src="../../assets/imgs/meteor.png" id="meteorite">

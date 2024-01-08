@@ -1,0 +1,23 @@
+<div id="setting_board">
+    <div id="general_settings">
+      <span><i class="fa-solid fa-gear"></i><h3>General settings :</h3></span>
+      <label for="dinonumber">Number of dinosaurs:</label>
+      <input type="number" id="dinonumber" name="dinonumber" min="1" max="5" value="1">
+      <label for="time_limit">Time Limit (seconds):</label>
+        <select id="time_limit" name="time_limit">
+          <option value="60" selected>60</option>
+          <option value="120">120</option>
+          <option value="180">180</option>
+        </select>
+    </div>
+    <div id="optionnal_settings">
+      <span><i class="fa-solid fa-gear"></i><h3>Optional settings :</h3></span>
+      <label for="mspeed">Meteor speed (defines at which speed you can move your meteor):</label>
+      <input type="number" id="mspeed" name="mspeed" min="1" max="8" value="5">
+      <label for="sspeed">Shoot speed (speed of the meteor once fired):</label>
+      <input type="number" id="sspeed" name="sspeed" min="1" max="10" value="4">
+      <label for="dspeed">Dinosaurs speed :</label>
+      <input type="number" id="dspeed" name="dspeed" min="1" max="10" value="2">
+    </div>
+    <button type="submit" id="submitbutton">Save</button>
+</div>

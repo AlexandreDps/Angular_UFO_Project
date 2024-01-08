@@ -1,0 +1,14 @@
+<div id="menu">
+    <div id="general">
+        <a href="home">Home</a>
+        <a href="preferences">Preferences</a>
+        <a href="play">Play</a>
+        <a href="records">Records</a>
+    </div>
+    <div id="connexion">
+        <a *ngIf="!is_logged_check()" href="register">Register</a>
+        <a *ngIf="!is_logged_check()" href="login">Login</a>
+        <a *ngIf="is_logged_check()">Welcome {{user}}</a>
+        <a *ngIf="is_logged_check()"><button (click)="disconnect()" id="disconnect">Disconnect</button></a>
+    </div>
+</div>

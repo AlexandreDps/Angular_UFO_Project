@@ -1,0 +1,12 @@
+<form *ngIf="!is_logged_check()" [formGroup]="loginForm" id="login_form" class="form" (ngSubmit)="login()">
+    <legend><i class="fa-regular fa-user"></i> Login :</legend>
+    <label for="username">Username :</label>
+    <input type="text" id="username" name="username" formControlName="username" />
+    <label for="password">Password :</label>
+    <input type="password" id="password" name="password" formControlName="password" />
+    <button type="submit" id="login_btn" [disabled]="loginForm.invalid">Connexion</button>
+</form>
+
+<div *ngIf="is_logged_check()">
+    <h1>Successfully logged in !</h1>
+</div>

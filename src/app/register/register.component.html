@@ -1,0 +1,19 @@
+<form *ngIf="!is_logged_check()" [formGroup]="registerForm" id="register_form" class="form" (ngSubmit)="handleRegister()">
+    <legend><i class="fa-solid fa-user-plus"></i> Create a new account :</legend>
+    <label for="username">Username :</label>
+    <input type="text" id="username" name="username" formControlName="username"/>
+    <div *ngIf="registerForm.get('username')?.hasError('maxlength')">
+        Username must be at most 8 characters long.
+    </div>
+    <label for="email">Email Address :</label>
+    <input type="email" id="email" name="email" formControlName="email" />
+    <label for="password">Password :</label>
+    <input type="password" id="password" name="password" formControlName="password" />
+    <label for="verify_password">Repeat Password :</label>
+    <input type="password" id="verify_password" name="verify_password" formControlName="verify_password"/>
+    <button type="submit" [disabled]="registerForm.invalid" id="submitbutton">Register</button>
+</form>
+
+<div *ngIf="is_logged_check()" id="success">
+    <h1>Successfully logged in !</h1>
+</div>

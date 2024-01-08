@@ -1,0 +1,41 @@
+#info {
+    width: 80%;
+    background-color: rgba(135, 45, 0, 0.8);
+    border-radius: 15px;
+    margin:0 auto;
+    margin-top: 20px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#correct_score {
+    font-family: 'Tahoma';
+    font-size: 1em;
+} 
+
+#table_container {
+    display: flex;
+    gap:25px;
+}
+.generated_tab {
+    background-color: rgba(250, 235, 215, 0.8);
+    color:black;
+    border-collapse: collapse;
+    padding:15px;
+    margin:0 auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+::ng-deep .generated_tab td,::ng-deep .generated_tab th{
+    font-family: 'tahoma';
+    font-size: 1em;
+    border: 1px solid black;
+    padding:5px;
+}
+
+::ng-deep .generated_tab tr.active {
+    background-color: orange;
+}
