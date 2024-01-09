@@ -10,7 +10,7 @@ To install this project :
 - Download the repository
 - Open a terminal and navigate to the project directory
 - Type <code>npm install</code>
-- Type <code>ng serve</code>
+- Type <code>npm run ng serve</code>
 
 ## The game
 
